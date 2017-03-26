@@ -19,10 +19,21 @@
 <script type="text/javascript">
 
   $( document ).ready(function() {
+
+  // Open navbarSide when button is clicked
   $('#navbarSideButton').on('click', function() {
     $('#navbarSide').addClass('reveal');
+    $('.overlay').show();
   });
+
+  // Close navbarSide when the outside of menu is clicked
+  $('.overlay').on('click', function(){
+    $('#navbarSide').removeClass('reveal');
+    $('.overlay').hide();
+  });
+
 });
+
 
 </script>
 </head>
@@ -30,12 +41,12 @@
 <body>
 
 <header background="books.jpg">
-<div class="navbar navbar-inverse navbar-fixed-top fixed-top" style="background-color: #000; ">
+<div class="navbar navbar-inverse navbar-fixed-top fixed-top"  ">
   <div class="container">     
         <a class="home-nav" href="login.html" >LOG IN </a>
         <a class="home-nav" href="about.html">ABOUT US</a>
               <div class="dropdown">
-              <a class="dropbtn">BOOKS </a>
+              <a class="dropbtn home-nav">BOOKS </a>
               <div class="dropdown-content">
                    <a href="Books_collection.html">Sci-fi</a>
                    <a href="Books_collection.html">Romance</a>
@@ -45,7 +56,6 @@
                    <a href="Books_collection.html">Poetry</a>
                    <a href="Books_collection.html">Maths</a>
                    <a href="Books_collection.html">Dictionary</a>
-                   <a href="Books_collection.html">Autobiography</a>
                    <a href="Books_collection.html">Adventure</a>
                    <a href="Books_collection.html">Science</a>
                    <a href="Books_collection.html">History</a>
@@ -59,12 +69,12 @@
         </button>
            <ul class="navbar-side" id="navbarSide">
               <li class="navbar-side-item"><a href="#" class="side-link">PROFILE</a></li>
-              <li class="navbar-side-item"><a href="#" class="side-link">ORDER</a></li>
               <li class="navbar-side-item"><a href="#" class="side-link">WISHLIST</a></li>
               <li class="navbar-side-item"><a href="#" class="side-link">RECENTLY VIEWED</a></li>
+              <li class="navbar-side-item"><a href="bag.html" class="side-link">BAG</a></li>
               <li class="navbar-side-item"><a href="#" class="side-link">LOGOUT</a></li>
            </ul>
-        
+        <div class="overlay"></div>
        
    </div>
 </div>
@@ -170,25 +180,25 @@
                 <div class="carousel-inner">
                   <div class="card-deck carousel-item active left">
                     <div class="card">
-                            <img class="img-fluid" src="maths.jpg" alt="Carousel 1" align="middle" style="height: 400px;">
+                            <img class="img-fluid" src="images/maths.jpg" alt="Carousel 1" align="middle" style="height: 400px;">
                     </div>
                     <div class="card">
-                            <img class="img-fluid" src="tech.jpg" alt="Carousel 2" align="middle" style="height: 400px;" >
+                            <img class="img-fluid" src="images/tech.jpg" alt="Carousel 2" align="middle" style="height: 400px;" >
                     </div>
-                    <div class="card
-                            <img class="img-fluid" src="accounts.jpg" alt="Carousel 3" align="middle" style="height: 400px;">
+                    <div class="card">
+                            <img class="img-fluid" src="images/accounts.jpg" alt="Carousel 3" align="middle" style="height: 400px;">
                     </div>
                   </div>
 
                   <div class="card-deck carousel-item next left">
                     <div class="card">
-                            <img class="img-fluid" src="dd.jpg" alt="Carousel 4" align="middle" style="height: 400px;">
+                            <img class="img-fluid" src="images/dd.jpg" alt="Carousel 4" align="middle" style="height: 400px;">
                     </div>
                     <div class="card">
-                            <img class="img-fluid" src="duck.jpg" alt="Carousel 5" align="middle" style="height: 400px;">
+                            <img class="img-fluid" src="images/duck.jpg" alt="Carousel 5" align="middle" style="height: 400px;">
                     </div>
                     <div class="card">
-                            <img class="img-fluid" src="novel.jpg" alt="Carousel 6" align="middle" style="height: 400px;">
+                            <img class="img-fluid" src="images/novel.jpg" alt="Carousel 6" align="middle" style="height: 400px;">
                     </div>
                   </div>
                 </div>
