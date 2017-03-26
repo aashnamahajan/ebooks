@@ -1,7 +1,16 @@
 <?php
 /*For My LocalPC*/
-$con=mysqli_connect ("localhost", "root", "") or die ('I cannot connect to the database because: ' . mysql_error());
-mysqli_select_db ($con,'web');
+$conn=mysqli_connect ("localhost", "root", "") or die ('I cannot connect to the database because: ' . mysql_error());
+mysqli_select_db ($conn,'web');
+
+if (mysqli_connect_errno($con))
+  {
+  echo "Failed to connect to MySQL: " . mysqli_connect_error();
+  }
+else
+{
+echo “Successfully connected to your database…”;
+}
 ?>
 
 

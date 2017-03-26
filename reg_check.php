@@ -12,7 +12,7 @@ echo $username . " " . $email;
 
 //insertion into db
 
-$result=mysql_query("INSERT into login_data(NAME,ID,PASSWORD,CONFIRM,GENDER) values('$username','$email','$password','$confirmpassword','$gender')", $conn);
+$result=mysqli_query("INSERT into login_data(NAME,ID,PASSWORD,CONFIRM,GENDER) values('$username','$email','$password','$confirmpassword','$gender')",$conn);
 
 echo "data is added";
 ?>
