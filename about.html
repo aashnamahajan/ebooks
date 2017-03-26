@@ -14,7 +14,69 @@
      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
 
 <link rel="stylesheet" type="text/css" href="web.css">
-<title>WEB PROJECT-about</title>
+<title>WEB PROJECT-home</title>
+
+<script type="text/javascript">
+
+  $( document ).ready(function() {
+
+  // Open navbarSide when button is clicked
+  $('#navbarSideButton').on('click', function() {
+    $('#navbarSide').addClass('reveal');
+    $('.overlay').show();
+  });
+
+  // Close navbarSide when the outside of menu is clicked
+  $('.overlay').on('click', function(){
+    $('#navbarSide').removeClass('reveal');
+    $('.overlay').hide();
+  });
+
+});
+
+
+</script>
+</head>
+
+<body>
+
+<header background="books.jpg">
+<div class="navbar navbar-inverse navbar-fixed-top fixed-top"  style="background-color: #000">
+  <div class="container">
+        <a class="home-nav" href="about.html">ABOUT US</a>
+              <div class="dropdown">
+              <a class="dropbtn home-nav">BOOKS </a>
+              <div class="dropdown-content">
+                   <a href="Books_collection.html">Sci-fi</a>
+                   <a href="Books_collection.html">Romance</a>
+                   <a href="Books_collection.html">Mystery</a>
+                   <a href="Books_collection.html">Children</a>
+                   <a href="Books_collection.html">Horror</a>
+                   <a href="Books_collection.html">Poetry</a>
+                   <a href="Books_collection.html">Maths</a>
+                   <a href="Books_collection.html">Dictionary</a>
+                   <a href="Books_collection.html">Adventure</a>
+                   <a href="Books_collection.html">Science</a>
+                   <a href="Books_collection.html">History</a>
+                   <a href="Books_collection.html">English</a>
+                   
+              </div>
+              </div>
+        <a class="home-nav" href="home.html">HOME</a> 
+         <button class="navbar-toggler pull-xs-right" id="navbarSideButton" type="button">
+         &#9776;
+        </button>
+           <ul class="navbar-side" id="navbarSide">
+              <li class="navbar-side-item"><a href="#" class="side-link">PROFILE</a></li>
+              <li class="navbar-side-item"><a href="#" class="side-link">WISHLIST</a></li>
+              <li class="navbar-side-item"><a href="#" class="side-link">RECENTLY VIEWED</a></li>
+              <li class="navbar-side-item"><a href="bag.html" class="side-link">BAG</a></li>
+              <li class="navbar-side-item"><a href="#" class="side-link">LOGOUT</a></li>
+           </ul>
+        <div class="overlay"></div>
+       
+   </div>
+</div>
 
 <style>
 
@@ -44,43 +106,30 @@
     display: block;
 }
 </style>
-</head>
 
-<body>
+</header>  
 
-<header background="books.jpg">
-<div class="navbar navbar-inverse navbar-fixed-top fixed-top" style="background-color: #000; ">
-  <div class="container">     
-        <a class="home-nav" href="login.html" >LOG IN </a>
-        <a class="home-nav" href="about.html">ABOUT US</a>
-              <div class="dropdown">
-              <a class="dropbtn">BOOKS </a>
-              <div class="dropdown-content">
-                   <a href="Books_collection.html">Sci-fi</a>
-                   <a href="Books_collection.html">Romance</a>
-                   <a href="Books_collection.html">Mystery</a>
-                   <a href="Books_collection.html">Children</a>
-                   <a href="Books_collection.html">Horror</a>
-                   <a href="Books_collection.html">Poetry</a>
-                   <a href="Books_collection.html">Maths</a>
-                   <a href="Books_collection.html">Dictionary</a>
-                   <a href="Books_collection.html">Autobiography</a>
-                   <a href="Books_collection.html">Adventure</a>
-                   <a href="Books_collection.html">Science</a>
-                   <a href="Books_collection.html">History</a>
-                   <a href="Books_collection.html">English</a>
-                   
-              </div>
-              </div>
-        <a class="home-nav" href="home.html">HOME</a> 
+<section style="margin-top: 100px; text-align:center; ">
+ <div class="container">
+   <h1 style="color:  #f7786b">
+      WHAT IS E-BOOKS ?
+   </h1>
+   <div class="row">
+      <div class="col-md-7">
+      <p style="color: #77a8a8">
+        <h3>
+        Welcome to E-BOOKS ! <br>
+        E-Books is an app containing thousands of popular titles. These eBooks can be read by all, regardless of the age. Anyone can access these eBooks, which include some of the most popular works of the present and past, using this eBooks app , people can read as well as buy the various books. The goal of E-Books is to encourage a love of reading and serve as a gateway to children reading even more often, whether in school, at libraries, or through other eBook reading apps. People can never get bored when they have these online books along with them. They can read it whenever they want, wherever they want.
+        </h3>
+      </p>
+      </div>
+      <div class="col-md-5">
+      <img src="images/img-about.jpg" height="300px" width="400px" style="margin-top: 60px;">
+      </div>
    </div>
-</div>
+ </div>  
+</section> 
 
-</header>
-
-
-
-   
    <footer class="footer text-center" style="color: #FFFFFF ; position: fixed;">
          Copyright @ 2017 AAlabs &nbsp &nbsp &nbsp &nbsp &nbsp
        Contact information :  aa@aa.com

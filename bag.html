@@ -14,7 +14,69 @@
      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
 
 <link rel="stylesheet" type="text/css" href="web.css">
-<title>WEB PROJECT-about</title>
+<title>WEB PROJECT-home</title>
+
+<script type="text/javascript">
+
+  $( document ).ready(function() {
+
+  // Open navbarSide when button is clicked
+  $('#navbarSideButton').on('click', function() {
+    $('#navbarSide').addClass('reveal');
+    $('.overlay').show();
+  });
+
+  // Close navbarSide when the outside of menu is clicked
+  $('.overlay').on('click', function(){
+    $('#navbarSide').removeClass('reveal');
+    $('.overlay').hide();
+  });
+
+});
+
+
+</script>
+</head>
+
+<body>
+
+<header background="books.jpg">
+<div class="navbar navbar-inverse navbar-fixed-top fixed-top"  style="color: #000">
+  <div class="container">  
+        <a class="home-nav" href="about.html">ABOUT US</a>
+              <div class="dropdown">
+              <a class="dropbtn home-nav">BOOKS </a>
+              <div class="dropdown-content">
+                   <a href="Books_collection.html">Sci-fi</a>
+                   <a href="Books_collection.html">Romance</a>
+                   <a href="Books_collection.html">Mystery</a>
+                   <a href="Books_collection.html">Children</a>
+                   <a href="Books_collection.html">Horror</a>
+                   <a href="Books_collection.html">Poetry</a>
+                   <a href="Books_collection.html">Maths</a>
+                   <a href="Books_collection.html">Dictionary</a>
+                   <a href="Books_collection.html">Adventure</a>
+                   <a href="Books_collection.html">Science</a>
+                   <a href="Books_collection.html">History</a>
+                   <a href="Books_collection.html">English</a>
+                   
+              </div>
+              </div>
+        <a class="home-nav" href="home.html">HOME</a> 
+         <button class="navbar-toggler pull-xs-right" id="navbarSideButton" type="button">
+         &#9776;
+        </button>
+           <ul class="navbar-side" id="navbarSide">
+              <li class="navbar-side-item"><a href="#" class="side-link">PROFILE</a></li>
+              <li class="navbar-side-item"><a href="#" class="side-link">WISHLIST</a></li>
+              <li class="navbar-side-item"><a href="#" class="side-link">RECENTLY VIEWED</a></li>
+              <li class="navbar-side-item"><a href="bag.html" class="side-link">BAG</a></li>
+              <li class="navbar-side-item"><a href="#" class="side-link">LOGOUT</a></li>
+           </ul>
+        <div class="overlay"></div>
+       
+   </div>
+</div>
 
 <style>
 
@@ -44,47 +106,14 @@
     display: block;
 }
 </style>
-</head>
 
-<body>
-
-<header background="books.jpg">
-<div class="navbar navbar-inverse navbar-fixed-top fixed-top" style="background-color: #000; ">
-  <div class="container">     
-        <a class="home-nav" href="login.html" >LOG IN </a>
-        <a class="home-nav" href="about.html">ABOUT US</a>
-              <div class="dropdown">
-              <a class="dropbtn">BOOKS </a>
-              <div class="dropdown-content">
-                   <a href="Books_collection.html">Sci-fi</a>
-                   <a href="Books_collection.html">Romance</a>
-                   <a href="Books_collection.html">Mystery</a>
-                   <a href="Books_collection.html">Children</a>
-                   <a href="Books_collection.html">Horror</a>
-                   <a href="Books_collection.html">Poetry</a>
-                   <a href="Books_collection.html">Maths</a>
-                   <a href="Books_collection.html">Dictionary</a>
-                   <a href="Books_collection.html">Autobiography</a>
-                   <a href="Books_collection.html">Adventure</a>
-                   <a href="Books_collection.html">Science</a>
-                   <a href="Books_collection.html">History</a>
-                   <a href="Books_collection.html">English</a>
-                   
-              </div>
-              </div>
-        <a class="home-nav" href="home.html">HOME</a> 
-   </div>
-</div>
-
-</header>
-
-
-
-    <footer class="footer text-center" style="color: #FFFFFF">
+</header>   
+   
+   <footer class="footer text-center" style="color: #FFFFFF ; position: fixed;">
          Copyright @ 2017 AAlabs &nbsp &nbsp &nbsp &nbsp &nbsp
        Contact information :  aa@aa.com
     </footer> 
-    
+
 
 </body>
 </html>
